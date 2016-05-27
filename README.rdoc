@@ -1,0 +1,13 @@
+== README
+
+This app consume a microservice to fetch tweets about a specific topic.
+
+To run it:
+
+* ruby 2.3.0
+
+* bundle install
+
+* rspec spec
+
+* rails s

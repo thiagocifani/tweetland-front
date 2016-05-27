@@ -1,0 +1,20 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li class="active">
+      <%= link_to "All", tweets_path, remote: true %>
+    </li>
+    <li>
+      <%= link_to "healthcare", tweets_path(q: "healthcare"), remote: true %>
+    </li>
+    <li>
+      <%= link_to "nasa", tweets_path(q: "nasa"), remote: true %>
+    </li>
+    <li>
+      <%= link_to "opensource", tweets_path(q: "opensource"), remote: true %>
+    </li>
+  </ul>
+</div>
+<br />
+<div class="row content">
+  <%= render "tweets", tweets: @tweets %>
+</div>

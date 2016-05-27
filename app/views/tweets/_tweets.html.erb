@@ -1,0 +1,16 @@
+<% tweets.each do |tweet| %>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <strong>@<%= tweet.handle %></strong>
+      <div class="pull-right">
+        <span class="badge"><%= tweet.topic%></span>
+        <span class="badge">retweets: <%= tweet.retweets%></span>
+        <span class="badge">favorites: <%= tweet.favorites%></span>
+      </div>
+    </div>
+    <div class="panel-body">
+      <img src=<%= tweet.photo %>/>
+      <%= tweet.text %>
+    </div>
+  </div>
+<% end %>
